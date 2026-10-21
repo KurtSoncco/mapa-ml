@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa de modelos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+</head>
+<body>
+  <main class="envoltorio">
+    <section id="mapa">
+      <header>
+        <h1>Mapa de modelos</h1>
+        <div class="muestras" aria-hidden="true">
+          <span style="background:#c24d26"></span>
+          <span style="background:#1c6b58"></span>
+          <span style="background:#a56d14"></span>
+          <span style="background:#72364e"></span>
+        </div>
+        <p class="bajada">Elige uno y mira su idea.</p>
+      </header>
+      <div id="lienzo-mapa" class="mapa-scroll"></div>
+      <div id="respaldo" hidden></div>
+    </section>
+    <section id="laboratorio" hidden>
+      <h2 id="titulo"></h2>
+      <p id="frase"></p>
+      <canvas id="lienzo"></canvas>
+      <div id="controles" class="controles"></div>
+      <button type="button" id="volver">Volver al mapa</button>
+    </section>
+  </main>
+  <noscript><p>Este mapa necesita JavaScript en el navegador.</p></noscript>
+  <script src="js/mate.js"></script>
+  <script src="js/laboratorios.js"></script>
+  <script src="js/mapa.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
